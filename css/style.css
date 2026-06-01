@@ -319,19 +319,6 @@ footer {
     transition: .4s;
 }
 
-.wip-tag {
-    position: absolute;
-
-    top: -20px;
-    left: -25px;
-
-    width: 75px;
-
-    transform: rotate(-14deg);
-
-    z-index: 30;
-}
-
 .project-card > img:not(.wip-tag) {
     width: 100%;
     height: 350px;
@@ -351,4 +338,17 @@ footer {
 .project-card:hover img {
 
     transform: scale(1.05);
+}
+
+.wip-tag {
+    position: absolute;
+
+    top: -20px;
+    left: -25px;
+
+    width: 75px;
+
+    transform: rotate(-14deg);
+
+    z-index: 30;
 }
