@@ -343,3 +343,27 @@ footer {
 
     transform: scale(1.05);
 }
+
+.wip-tag {
+
+    position: absolute;
+
+    top: 18px;
+    left: 18px;
+
+    width: 130px;
+
+    transform: rotate(-12deg);
+
+    z-index: 10;
+
+    filter:
+        drop-shadow(0 8px 15px rgba(0,0,0,.3));
+}
+
+.project-card:hover .wip-tag {
+
+    transform:
+        rotate(-12deg)
+        scale(1.05);
+}
