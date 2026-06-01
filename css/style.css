@@ -633,3 +633,48 @@ footer {
 
     line-height: 1.8;
 }
+
+/* ART PAGE */
+
+.gallery-container {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 0 30px 120px;
+}
+
+.gallery {
+
+    columns: 3 320px;
+
+    column-gap: 20px;
+}
+
+.gallery img {
+
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    border-radius: 24px;
+
+    display: block;
+
+    break-inside: avoid;
+
+    transition: .4s;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+}
+
+.gallery img:hover {
+
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.15);
+}
