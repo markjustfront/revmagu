@@ -4,170 +4,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mar Aguilar Serrats | MAGU</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-zinc-50 text-zinc-900">
+<body>
 
     <!-- Navigation -->
-    <nav class="bg-[#5C7A9D] text-white py-5 sticky top-0 z-50">
+
+    <nav class="navbar">
         <div class="max-w-7xl mx-auto px-6 flex justify-center gap-8 text-sm font-medium">
-            <a href="index.html" class="text-amber-200 font-bold">INICIO</a>
-            <a href="animation.html" class="hover:text-amber-200 transition">ANIMATION</a>
-            <a href="story-telling.html" class="hover:text-amber-200 transition">STORY-TELLING</a>
-            <a href="storyboard.html" class="hover:text-amber-200 transition">STORYBOARD</a>
-            <a href="art.html" class="hover:text-amber-200 transition">ART</a>
-            <a href="contact.html" class="hover:text-amber-200 transition">CONTACT</a>
+
+            <a href="index.html" class="active">HOME</a>
+            <a href="animation.html">ANIMATION</a>
+            <a href="story-telling.html">STORY-TELLING</a>
+            <a href="storyboard.html">STORYBOARD</a>
+            <a href="art.html">ART</a>
+            <a href="contact.html">CONTACT</a>
+
         </div>
     </nav>
 
-    <!-- Hero -->
-    <div class="hero-bg h-[420px] flex items-center justify-center text-white text-center"
-        style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/hero/hero-bg.jpg');">
-        <h1 class="magu-title text-6xl md:text-7xl tracking-widest">Mar Aguilar Serrats</h1>
-    </div>
+    <!-- HERO -->
 
-    <!--
-Source - https://stackoverflow.com/a/57738809
-Posted by Talib Hussain
-Retrieved 2026-06-01, License - CC BY-SA 4.0
--->
+    <header class="hero-video">
 
-<header>
-  <div class="overlay"></div>
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="images/vid.mp4" type="video/mp4">
-  </video>
-  <div class="container h-100">
-    <div class="d-flex h-100 text-center align-items-center">
-      <div class="w-100 text-white">
-        <h1 class="display-3">Video Header</h1>
-        <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
-      </div>
-    </div>
-  </div>
-</header>
+        <video autoplay muted loop playsinline>
+            <source src="images/vid.mp4" type="video/mp4">
+        </video>
 
+        <div class="overlay"></div>
 
-    <!-- About Section -->
-    <div class="max-w-7xl mx-auto px-6 py-16">
-        <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div class="hero-content">
 
-            <!-- Left: Big Image + Info -->
-            <div class="bg-white border-4 border-black shadow-2xl overflow-hidden">
-                <div class="p-8">
-                    <h2 class="text-5xl font-black tracking-tighter mb-1">MAGU.</h2>
-                    <p class="text-xl font-bold text-zinc-700 mb-6">MAR AGUILAR SERRATS</p>
+            <img src="images/avatar.png" alt="Mar Aguilar Serrats" class="hero-avatar">
 
-                    <img src="https://picsum.photos/id/1015/800/520" alt="Mar Aguilar Serrats"
-                        class="w-full rounded shadow-lg">
+            <img src="images/magu-logo.png" alt="MAGU" class="hero-logo">
 
-                    <div class="mt-6 text-sm uppercase tracking-widest space-y-1 text-zinc-600">
-                        <div>2D Animator</div>
-                        <div>Story Telling</div>
-                        <div>Story Board</div>
-                    </div>
-                </div>
-            </div>
+            <p class="hero-subtitle">
+                3D Animator • Story Artist • Storyteller
+            </p>
 
-            <!-- Right: Bio -->
-            <div class="pt-8">
-                <div class="flex items-center gap-6">
-                    <h2 class="text-7xl font-black tracking-[-6px] text-black magu-title">MAGU.</h2>
-                    <img src="https://picsum.photos/id/64/140/140" alt="Avatar"
-                        class="w-32 h-32 rounded-full border-4 border-black shadow-xl">
-                </div>
+            <p class="hero-description">
+                Creating characters, stories and worlds through
+                animation, visual development and storytelling.
+            </p>
 
-                <div class="mt-10 text-lg leading-relaxed text-zinc-700">
-                    <p>Hi! My name is Mar Aguilar Serrats, aka <strong>MAGU</strong>, and I'm an artist and storyteller
-                        from a little ceramic town in Girona.</p>
-                </div>
+            <a href="#portfolios" class="hero-button">
+                <i class="fas fa-arrow-right"></i>
+                VIEW MY WORK
+            </a>
 
-                <a href="#"
-                    class="mt-12 inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-2xl font-medium hover:bg-zinc-800 transition">
-                    <i class="fas fa-arrow-right"></i>
-                    <span>VIEW MY WORK</span>
-                </a>
-            </div>
         </div>
-    </div>
 
-    <!-- Portfolios -->
-    <div class="max-w-7xl mx-auto px-6 pb-24">
-        <h2 class="text-4xl font-bold text-center mb-16 tracking-wider">PORTFOLIOS</h2>
+    </header>
+
+    <!-- About -->
+
+    <section class="max-w-5xl mx-auto px-6 py-24 text-center">
+
+        <h2 class="text-4xl font-bold mb-8">
+            Hi, I'm Mar.
+        </h2>
+
+        <p class="text-xl text-zinc-600 leading-relaxed">
+            I'm a 3D animator and storyteller from Girona,
+            passionate about creating expressive characters,
+            compelling narratives and memorable visual experiences.
+        </p>
+
+    </section>
+
+    <!-- Portfolio -->
+
+    <section id="portfolios" class="max-w-7xl mx-auto px-6 pb-24">
+
+        <h2 class="section-title">
+            PORTFOLIOS
+        </h2>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-            <div class="portfolio-card bg-white border border-zinc-200 rounded-3xl overflow-hidden">
+            <!-- Animation -->
+
+            <div class="portfolio-card">
+
                 <div class="aspect-video overflow-hidden">
-                    <img src="images/image_edited.jpeg" alt="Animation Portfolio"
-                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                    <img src="images/image_edited.jpeg" alt="Animation Portfolio">
+
                 </div>
+
                 <div class="p-6">
-                    <span class="bg-black text-white text-xs px-4 py-1 rounded-full">ANIMATION</span>
-                    <h3 class="font-semibold mt-4 mb-2">Animation Portfolio</h3>
-                    <p class="text-sm text-zinc-600">Latest demo reel and current works/WIPs.</p>
+
+                    <span class="tag">
+                        ANIMATION
+                    </span>
+
+                    <h3>
+                        Animation Portfolio
+                    </h3>
+
+                    <p>
+                        Latest demo reel and current projects.
+                    </p>
+
                 </div>
+
             </div>
 
-            <div class="portfolio-card bg-white border border-zinc-200 rounded-3xl overflow-hidden">
+            <!-- Storytelling -->
+
+            <div class="portfolio-card">
+
                 <div class="aspect-video overflow-hidden">
-                    <img src="images/mayra_ref_edited.png" alt="Story-Telling Portfolio"
-                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                    <img src="images/mayra_ref_edited.png" alt="Storytelling">
+
                 </div>
+
                 <div class="p-6">
-                    <span class="bg-black text-white text-xs px-4 py-1 rounded-full">STORY-TELLING</span>
-                    <h3 class="font-semibold mt-4 mb-2">Story-Telling</h3>
-                    <p class="text-sm text-zinc-600">Recent writing works with illustrations.</p>
+
+                    <span class="tag">
+                        STORY-TELLING
+                    </span>
+
+                    <h3>
+                        Story-Telling
+                    </h3>
+
+                    <p>
+                        Writing and narrative development.
+                    </p>
+
                 </div>
+
             </div>
 
-            <div class="portfolio-card bg-white border border-zinc-200 rounded-3xl overflow-hidden">
+            <!-- Storyboard -->
+
+            <div class="portfolio-card">
+
                 <div class="aspect-video overflow-hidden">
-                    <img src="images/entre_mesas_ref_edited.jpg.jpeg" alt="Storyboard Portfolio"
-                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                    <img src="images/entre_mesas_ref_edited.jpg.jpeg" alt="Storyboard">
+
                 </div>
+
                 <div class="p-6">
-                    <span class="bg-black text-white text-xs px-4 py-1 rounded-full">STORYBOARD</span>
-                    <h3 class="font-semibold mt-4 mb-2">Storyboard</h3>
-                    <p class="text-sm text-zinc-600">Collection of storyboards and WIPs.</p>
+
+                    <span class="tag">
+                        STORYBOARD
+                    </span>
+
+                    <h3>
+                        Storyboard
+                    </h3>
+
+                    <p>
+                        Storyboards and visual planning.
+                    </p>
+
                 </div>
+
             </div>
 
-            <div class="portfolio-card bg-white border border-zinc-200 rounded-3xl overflow-hidden">
+            <!-- Art -->
+
+            <div class="portfolio-card">
+
                 <div class="aspect-video overflow-hidden">
-                    <img src="images/art_porfolio.png" alt="Art Portfolio"
-                        class="w-full h-full object-cover hover:scale-110 transition duration-500">
+
+                    <img src="images/art_porfolio.png" alt="Art">
+
                 </div>
+
                 <div class="p-6">
-                    <span class="bg-black text-white text-xs px-4 py-1 rounded-full">ART PORTFOLIO</span>
-                    <h3 class="font-semibold mt-4 mb-2">Art Portfolio</h3>
-                    <p class="text-sm text-zinc-600">Art from jobs and assignments.</p>
+
+                    <span class="tag">
+                        ART
+                    </span>
+
+                    <h3>
+                        Art Portfolio
+                    </h3>
+
+                    <p>
+                        Illustrations, concepts and visual work.
+                    </p>
+
                 </div>
+
             </div>
+
         </div>
-    </div>
+
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-zinc-900 text-white py-16">
+
+    <footer>
+
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <div class="flex justify-center gap-10 text-3xl mb-8">
-                <a href="#" class="hover:text-amber-400 transition"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="hover:text-amber-400 transition"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="hover:text-amber-400 transition"><i class="fab fa-behance"></i></a>
-                <a href="#" class="hover:text-amber-400 transition"><i class="fab fa-linkedin"></i></a>
+
+            <div class="socials">
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+
             </div>
-            <p class="text-zinc-400">© 2026 Mar Aguilar Serrats • All Rights Reserved</p>
-            <p class="text-zinc-500 text-sm mt-2">Made with passion in Girona, Spain</p>
+
+            <p>
+                © 2026 Mar Aguilar Serrats
+            </p>
+
+            <p class="footer-small">
+                Made in Girona, Spain
+            </p>
+
         </div>
+
     </footer>
 
-    <script>
-        console.log("%cMar Aguilar Serrats Portfolio - Ready for GitHub Pages ✨", "color:#5C7A9D; font-size:14px; font-family:monospace");
-    </script>
 </body>
 
 </html>
