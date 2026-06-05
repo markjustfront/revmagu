@@ -1424,3 +1424,34 @@ transform: scale(1.03);
         padding: 35px;
     }
 }
+
+/* ==========================================
+   PROJECT HERO
+========================================== */
+
+.project-hero {
+
+    padding-top: 100px;
+
+    background: #f5f5f5;
+}
+
+.project-hero img {
+
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: block;
+}
+
+/* ==========================================
+   ENTRE MESAS PAGE
+========================================== */
+
+.gallery img {
+
+    cursor: pointer;
+}
