@@ -259,6 +259,12 @@ body {
 
 .portfolio-card {
 
+    display: block;
+
+    text-decoration: none;
+
+    color: inherit;
+
     background: white;
 
     overflow: hidden;
@@ -268,6 +274,10 @@ body {
     border: 1px solid #e5e5e5;
 
     transition: .4s;
+}
+
+.portfolio-card {
+    cursor: pointer;
 }
 
 .portfolio-card img {
