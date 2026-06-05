@@ -91,7 +91,7 @@ body {
 
     max-width: 850px;
 
-    padding: 60px 20px;
+    padding: 60px 70px;
 
     text-align: center;
 
@@ -1355,30 +1355,6 @@ transform: scale(1.03);
 /* ==========================================
 CONTACT PAGE
 ========================================== */
-
-.contact-hero {
-
-    position: relative;
-
-    background:
-        linear-gradient(
-            rgba(0,0,0,.55),
-            rgba(0,0,0,.65)
-        ),
-        url("../images/contact-banner.jpg");
-
-    background-size: cover;
-
-    background-position: center;
-
-    color: white;
-}
-
-.contact-hero .hero-label,
-.contact-hero p {
-
-    color: rgba(255,255,255,.9);
-}
 
 .contact-layout {
 
