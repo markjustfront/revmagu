@@ -17,31 +17,6 @@ body {
     color: #111;
 }
 
-/* NAVBAR */
-
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-
-    padding: 24px 0;
-
-    background: rgba(15,15,15,.55);
-
-    backdrop-filter: blur(12px);
-}
-
-.navbar a {
-    color: white;
-    transition: .3s;
-}
-
-.navbar a:hover,
-.navbar .active {
-    color: #f6c25c;
-}
-
 /* HERO */
 
 .hero-video {
