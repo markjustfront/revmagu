@@ -495,43 +495,6 @@ footer {
 }
 
 /* ANIMATION PAGE */
-/* 
-.animation-hero {
-
-    padding-top: 180px;
-    padding-bottom: 120px;
-
-    text-align: center;
-}
-
-.animation-hero h1 {
-
-    font-size: clamp(3rem, 6vw, 5rem);
-
-    font-weight: 700;
-
-    margin-top: 15px;
-}
-
-.animation-hero p {
-
-    max-width: 700px;
-
-    margin: 25px auto 0;
-
-    color: #666;
-
-    font-size: 1.2rem;
-}
-
-.hero-label {
-
-    text-transform: uppercase;
-
-    letter-spacing: 3px;
-
-    color: var(--primary);
-} */
 
 .featured-video {
 
@@ -610,49 +573,6 @@ footer {
     color: #666;
 }
 
-/* STORYBOARD HERO */
-
-/* .page-hero {
-
-    padding-top: 180px;
-    padding-bottom: 120px;
-
-    text-align: center;
-}
-
-.hero-label {
-
-    text-transform: uppercase;
-
-    letter-spacing: 3px;
-
-    color: var(--primary);
-
-    font-size: .9rem;
-}
-
-.page-hero h1 {
-
-    font-size: clamp(3rem, 6vw, 5rem);
-
-    font-weight: 700;
-
-    margin-top: 15px;
-}
-
-.page-hero p {
-
-    max-width: 700px;
-
-    margin: 25px auto 0;
-
-    color: #666;
-
-    font-size: 1.2rem;
-
-    line-height: 1.8;
-} */
-
 /* ART PAGE */
 
 /* ==========================================
@@ -672,7 +592,7 @@ footer {
 
     text-align: center;
 
-    padding: 180px 30px 120px;
+    padding: 100px 30px 120px;
 
     background:
         linear-gradient(
