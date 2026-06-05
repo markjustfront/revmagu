@@ -1482,6 +1482,17 @@ CONTACT PAGE
 /* RESPONSIVE BURGER */
 /* DESKTOP */
 
+.navbar .nav-menu a {
+
+    color: white !important;
+}
+
+.navbar .nav-menu a:hover,
+.navbar .nav-menu a.active {
+
+    color: #f6c25c !important;
+}
+
 .nav-menu {
 
     display: flex;
