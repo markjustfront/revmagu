@@ -1503,3 +1503,111 @@ CONTACT PAGE
         margin-right: auto;
     }
 }
+
+/* RESPONSIVE BURGER MENU */
+
+.nav-container {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 0 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.nav-links {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+.menu-toggle {
+
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 1.8rem;
+
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+
+    .menu-toggle {
+
+        display: block;
+    }
+
+    .nav-links {
+
+        position: absolute;
+
+        top: 100%;
+
+        left: 0;
+
+        width: 100%;
+
+        background: rgba(15,15,15,.98);
+
+        backdrop-filter: blur(15px);
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 25px;
+
+        padding: 30px;
+
+        display: none;
+    }
+
+    .nav-links.active {
+
+        display: flex;
+    }
+
+}
+
+.nav-links {
+
+    transition: .3s ease;
+}
+  
+.nav-links.active {
+
+    animation: menuReveal .3s ease;
+}
+
+@keyframes menuReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-15px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}

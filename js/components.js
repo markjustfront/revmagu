@@ -31,3 +31,16 @@ function setActiveLink() {
 }
 
 loadComponents();
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const menuBtn = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", () => {
+
+        navLinks.classList.toggle("active");
+
+    });
+
+});
