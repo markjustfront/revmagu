@@ -32,14 +32,14 @@ function setActiveLink() {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
+    const toggle = document.getElementById("menuToggle");
+    const menu = document.getElementById("navMenu");
 
-    if (menuToggle && navLinks) {
+    if (toggle && menu) {
 
-        menuToggle.addEventListener("click", () => {
+        toggle.addEventListener("click", () => {
 
-            navLinks.classList.toggle("active");
+            menu.classList.toggle("active");
 
         });
 

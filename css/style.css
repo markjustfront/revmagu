@@ -1505,46 +1505,34 @@ CONTACT PAGE
 }
 
 /* RESPONSIVE BURGER */
+.menu-toggle {
 
-.navbar {
+    display: none;
 
-    position: fixed;
+    background: none;
 
-    top: 0;
+    border: none;
 
-    width: 100%;
+    color: white;
 
-    z-index: 999;
+    font-size: 1.8rem;
 
-    padding: 24px 0;
+    cursor: pointer;
+}
 
-    background: rgba(15,15,15,.55);
-
-    backdrop-filter: blur(12px);
+.nav-menu {
 
     display: flex;
 
     justify-content: center;
-}
-
-.nav-links {
-
-    display: flex;
 
     gap: 32px;
-}
-
-.menu-toggle {
-
-    display: none;
 }
 
 /* MOBILE BURGER CSS */
 @media (max-width: 900px) {
 
     .navbar {
-
-        justify-content: flex-end;
 
         padding: 20px;
     }
@@ -1553,30 +1541,26 @@ CONTACT PAGE
 
         display: block;
 
-        background: none;
+        position: absolute;
 
-        border: none;
+        right: 25px;
 
-        color: white;
+        top: 50%;
 
-        font-size: 1.8rem;
-
-        cursor: pointer;
+        transform: translateY(-50%);
 
         z-index: 1001;
     }
 
-    .nav-links {
+    .nav-menu {
 
         position: fixed;
 
         inset: 0;
 
-        background: rgba(10,10,10,.97);
+        background: rgba(15,15,15,.98);
 
         backdrop-filter: blur(20px);
-
-        display: flex;
 
         flex-direction: column;
 
@@ -1591,16 +1575,14 @@ CONTACT PAGE
         transition: .4s ease;
     }
 
-    .nav-links.active {
+    .nav-menu.active {
 
         transform: translateY(0);
     }
 
-    .nav-links a {
+    .nav-menu a {
 
         font-size: 1.5rem;
-
-        color: white;
     }
 }
 /* MOBILE BURGER CSS */
