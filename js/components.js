@@ -16,21 +16,31 @@ async function loadComponents() {
 
 function setupMobileMenu() {
 
-    const toggle =
-        document.getElementById("menuToggle");
+    const toggle = document.getElementById("menuToggle");
+    const menu = document.getElementById("navMenu");
 
-    const menu =
-        document.getElementById("navMenu");
+    if (!toggle || !menu) return;
 
-    if (toggle && menu) {
+    toggle.addEventListener("click", () => {
 
-        toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
 
-            menu.classList.toggle("active");
+        const icon = toggle.querySelector("i");
 
-        });
+        if (menu.classList.contains("active")) {
 
-    }
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+
+        } else {
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+        }
+
+    });
+
 }
 
 function setActiveLink() {
