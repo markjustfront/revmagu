@@ -917,3 +917,60 @@ transform: scale(1.03);
 ```
 
 }
+
+/* ==========================================
+PHONE FRAME IMPROVEMENTS
+========================================== */
+
+
+.phone-frame {
+
+    width: 320px;
+
+    margin: 0 auto;
+
+    padding: 12px;
+
+    background: #111;
+
+    border-radius: 40px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.2);
+
+    position: relative;
+}
+
+.phone-frame::before {
+
+    content: '';
+
+    position: absolute;
+
+    top: 10px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 120px;
+    height: 20px;
+
+    background: #000;
+
+    border-radius: 20px;
+
+    z-index: 2;
+}
+
+.phone-frame video {
+
+    width: 100%;
+
+    aspect-ratio: 9 / 16;
+
+    object-fit: cover;
+
+    border-radius: 30px;
+
+    display: block;
+}
