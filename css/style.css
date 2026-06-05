@@ -917,6 +917,29 @@ transform: scale(1.03);
 ```
 
 }
+/* ==========================================
+   PHONE GRID
+========================================== */
+
+.phone-grid {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+
+    gap: 60px;
+}
+
+.phone-project {
+
+    max-width: 360px;
+
+    text-align: center;
+}
 
 /* ==========================================
    PHONE SHOWCASE
@@ -924,18 +947,41 @@ transform: scale(1.03);
 
 .phone-showcase {
 
+    position: relative;
+
     display: flex;
 
     justify-content: center;
 
-    padding: 20px;
+    padding: 40px;
 }
 
-/* PHONE BODY */
+.phone-showcase::before {
+
+    content: '';
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            rgba(92,122,157,.12),
+            transparent 70%
+        );
+
+    z-index: 0;
+}
 
 .phone-frame {
 
     position: relative;
+
+    z-index: 1;
 
     width: 340px;
 
@@ -971,8 +1017,6 @@ transform: scale(1.03);
         0 20px 40px rgba(0,0,0,.2);
 }
 
-/* SCREEN */
-
 .phone-frame video {
 
     width: 100%;
@@ -987,8 +1031,6 @@ transform: scale(1.03);
 
     background: black;
 }
-
-/* DYNAMIC ISLAND / NOTCH */
 
 .phone-notch {
 
@@ -1009,12 +1051,7 @@ transform: scale(1.03);
     border-radius: 999px;
 
     z-index: 10;
-
-    box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.08);
 }
-
-/* SIDE BUTTONS */
 
 .phone-frame::before {
 
@@ -1054,39 +1091,23 @@ transform: scale(1.03);
     background: #444;
 }
 
-.phone-showcase {
+.phone-content {
 
-    position: relative;
-
-    display: flex;
-
-    justify-content: center;
-
-    padding: 40px;
+    margin-top: 25px;
 }
 
-.phone-showcase::before {
+.phone-content h3 {
 
-    content: '';
+    font-size: 1.5rem;
 
-    position: absolute;
+    font-weight: 700;
 
-    width: 500px;
-
-    height: 500px;
-
-    border-radius: 50%;
-
-    background:
-        radial-gradient(
-            rgba(92,122,157,.15),
-            transparent 70%
-        );
-
-    z-index: 0;
+    margin-bottom: 10px;
 }
 
-.phone-frame {
+.phone-content p {
 
-    z-index: 1;
+    color: #666;
+
+    line-height: 1.8;
 }
