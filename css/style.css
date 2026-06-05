@@ -1552,29 +1552,30 @@ CONTACT PAGE
         z-index: 1001;
     }
 
-    .nav-menu {
+.nav-menu {
 
-        position: fixed;
+    position: fixed;
 
-        inset: 0;
+    inset: 0;
 
-        background: rgba(15,15,15,.98);
+    display: flex;
 
-        backdrop-filter: blur(20px);
+    flex-direction: column;
 
-        flex-direction: column;
+    justify-content: center;
 
-        justify-content: center;
+    align-items: center;
 
-        align-items: center;
+    gap: 30px;
 
-        gap: 30px;
+    background: rgba(15,15,15,.98);
 
-        transform: translateY(-100%);
+    backdrop-filter: blur(20px);
 
-        transition: .4s ease;
-    }
+    transform: translateY(-100%);
 
+    transition: transform .4s ease;
+}
     .nav-menu.active {
 
         transform: translateY(0);
