@@ -1326,3 +1326,12 @@ transform: scale(1.03);
         grid-template-columns: 1fr;
     }
 }
+
+.project-card {
+
+    display: block;
+
+    text-decoration: none;
+
+    color: inherit;
+}
