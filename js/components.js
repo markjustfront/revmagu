@@ -10,6 +10,27 @@ async function loadComponents() {
         await footer.text();
 
     setActiveLink();
+
+    setupMobileMenu();
+}
+
+function setupMobileMenu() {
+
+    const toggle =
+        document.getElementById("menuToggle");
+
+    const menu =
+        document.getElementById("navMenu");
+
+    if (toggle && menu) {
+
+        toggle.addEventListener("click", () => {
+
+            menu.classList.toggle("active");
+
+        });
+
+    }
 }
 
 function setActiveLink() {
@@ -30,19 +51,4 @@ function setActiveLink() {
         });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-
-    const toggle = document.getElementById("menuToggle");
-    const menu = document.getElementById("navMenu");
-
-    if (toggle && menu) {
-
-        toggle.addEventListener("click", () => {
-
-            menu.classList.toggle("active");
-
-        });
-
-    }
-
-});
+loadComponents();
