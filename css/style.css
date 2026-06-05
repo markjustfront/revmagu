@@ -825,3 +825,186 @@ footer {
         transform: scale(1);
     }
 }
+
+/* ==========================================
+ANIMATION HERO
+========================================== */
+
+.animation-hero-video {
+
+```
+position: relative;
+
+height: 100vh;
+
+overflow: hidden;
+
+display: flex;
+justify-content: center;
+align-items: center;
+```
+
+}
+
+.animation-hero-video video {
+
+```
+position: absolute;
+
+width: 100%;
+height: 100%;
+
+object-fit: cover;
+```
+
+}
+
+.animation-overlay {
+
+```
+position: absolute;
+
+inset: 0;
+
+background:
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.75)
+    );
+```
+
+}
+
+.animation-hero-content {
+
+```
+position: relative;
+
+z-index: 2;
+
+text-align: center;
+
+color: white;
+
+max-width: 900px;
+
+padding: 0 30px;
+```
+
+}
+
+.animation-hero-content h1 {
+
+```
+font-size: clamp(4rem, 8vw, 7rem);
+
+font-weight: 700;
+
+margin-top: 15px;
+```
+
+}
+
+.animation-hero-content p {
+
+```
+margin-top: 25px;
+
+font-size: 1.3rem;
+
+color: rgba(255,255,255,.85);
+```
+
+}
+
+/* ==========================================
+SKILLS
+========================================== */
+
+.skills-grid {
+
+```
+display: flex;
+
+justify-content: center;
+
+flex-wrap: wrap;
+
+gap: 16px;
+```
+
+}
+
+.skills-grid span {
+
+```
+background: white;
+
+padding: 14px 24px;
+
+border-radius: 999px;
+
+border: 1px solid rgba(0,0,0,.08);
+
+font-weight: 600;
+```
+
+}
+
+/* ==========================================
+PROJECT TAGS
+========================================== */
+
+.project-tags {
+
+```
+display: flex;
+
+flex-wrap: wrap;
+
+gap: 10px;
+
+margin-top: 20px;
+```
+
+}
+
+.project-tags span {
+
+```
+background: #111;
+
+color: white;
+
+padding: 6px 12px;
+
+border-radius: 999px;
+
+font-size: .75rem;
+```
+
+}
+
+/* ==========================================
+VIDEO IMPROVEMENTS
+========================================== */
+
+.animation-card video {
+
+```
+width: 100%;
+
+display: block;
+
+transition: transform .5s ease;
+```
+
+}
+
+.animation-card:hover video {
+
+```
+transform: scale(1.03);
+```
+
+}
