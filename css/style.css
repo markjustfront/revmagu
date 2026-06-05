@@ -395,6 +395,15 @@ footer {
     transition: .4s;
 }
 
+.project-card {
+
+    display: block;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
 .project-card:hover {
     transform:
         translateY(-10px)
@@ -1110,4 +1119,210 @@ transform: scale(1.03);
     color: #666;
 
     line-height: 1.8;
+}
+
+/* ==========================================
+   MAYRA PROJECT
+========================================== */
+
+.mayra-hero {
+
+    position: relative;
+
+    min-height: 70vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background:
+        url("../images/Story-Telling/Mayra/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+.mayra-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.45),
+            rgba(0,0,0,.65)
+        );
+}
+
+.mayra-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    color: white;
+}
+
+.mayra-logo {
+
+    width: 650px;
+
+    max-width: 90%;
+}
+
+.project-title {
+
+    font-size: clamp(3rem, 6vw, 5rem);
+
+    font-weight: 700;
+
+    line-height: 1.1;
+}
+
+.project-title span {
+
+    display: block;
+
+    color: var(--primary);
+}
+
+.project-subtitle {
+
+    margin-top: 15px;
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+}
+
+.project-description {
+
+    margin-top: 30px;
+
+    line-height: 2;
+
+    color: #555;
+}
+
+.project-feature-image {
+
+    width: 100%;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.12);
+}
+
+/* EPISODES */
+
+.episode-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(300px,1fr));
+
+    gap: 25px;
+}
+
+.episode-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(0,0,0,.05);
+
+    transition: .3s;
+}
+
+.episode-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.1);
+}
+
+.episode-card h3 {
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    color: var(--primary);
+}
+
+.episode-card h4 {
+
+    margin-top: 10px;
+
+    font-weight: 700;
+}
+
+.episode-card p {
+
+    margin-top: 15px;
+
+    color: #666;
+
+    line-height: 1.8;
+}
+
+/* GALLERY */
+
+.project-gallery {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 0 30px 120px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 25px;
+}
+
+.project-gallery img {
+
+    width: 100%;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+}
+
+.project-gallery img:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.15);
+}
+
+@media (max-width: 768px) {
+
+    .project-gallery {
+
+        grid-template-columns: 1fr;
+    }
 }
