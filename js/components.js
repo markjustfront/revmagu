@@ -61,4 +61,19 @@ function setActiveLink() {
         });
 }
 
+document.querySelectorAll('#navMenu a').forEach(link => {
+
+    link.addEventListener('click', () => {
+
+        menu.classList.remove('active');
+
+        const icon = toggle.querySelector('i');
+
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+
+    });
+
+});
+
 loadComponents();

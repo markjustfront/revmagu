@@ -1626,3 +1626,25 @@ CONTACT PAGE
         font-weight: 500;
     }
 }
+
+@media (max-width: 900px) {
+
+    .menu-toggle {
+
+        display: block;
+
+        position: fixed;
+
+        top: 25px;
+
+        right: 25px;
+
+        z-index: 10000;
+    }
+
+    .nav-menu {
+
+        z-index: 9998;
+    }
+
+}
